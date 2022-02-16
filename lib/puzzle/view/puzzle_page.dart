@@ -3,6 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gap/gap.dart';
 import 'package:very_good_slide_puzzle/audio_control/audio_control.dart';
 import 'package:very_good_slide_puzzle/dashatar/dashatar.dart';
+import 'package:very_good_slide_puzzle/festival/festival_month.dart';
+import 'package:very_good_slide_puzzle/festival/season_theme.dart';
 import 'package:very_good_slide_puzzle/l10n/l10n.dart';
 import 'package:very_good_slide_puzzle/layout/layout.dart';
 import 'package:very_good_slide_puzzle/models/models.dart';
@@ -24,6 +26,8 @@ class PuzzlePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final festivalMonth = const Festival().getFestivalMonth(DateTime.now());
+
     return MultiBlocProvider(
       providers: [
         BlocProvider(
@@ -44,9 +48,17 @@ class PuzzlePage extends StatelessWidget {
         BlocProvider(
           create: (context) => ThemeBloc(
             initialThemes: [
-              const SimpleTheme(),
-              context.read<DashatarThemeBloc>().state.theme,
+              //2022-01-28_Jason
+              //const SimpleTheme(),
+              const SeasonTheme02(),
+              const SeasonTheme04(),
+              const SeasonTheme06(),
+              const SeasonTheme08(),
+              const SeasonTheme10(),
+              const SeasonTheme12(),
+              //context.read<DashatarThemeBloc>().state.theme,
             ],
+            initialTheme: festivalMonth.theme,
           ),
         ),
         BlocProvider(
@@ -75,7 +87,9 @@ class PuzzleView extends StatelessWidget {
     final theme = context.select((ThemeBloc bloc) => bloc.state.theme);
 
     /// Shuffle only if the current theme is Simple.
-    final shufflePuzzle = theme is SimpleTheme;
+    var isShuffle = theme is SimpleTheme;
+    //2022-01-28_Jason
+    isShuffle = isShuffle || (theme is SpringTheme);
 
     return Scaffold(
       body: AnimatedContainer(
@@ -83,6 +97,7 @@ class PuzzleView extends StatelessWidget {
         decoration: BoxDecoration(color: theme.backgroundColor),
         child: BlocListener<DashatarThemeBloc, DashatarThemeState>(
           listener: (context, state) {
+            //2022-01-27_Jason
             final dashatarTheme = context.read<DashatarThemeBloc>().state.theme;
             context.read<ThemeBloc>().add(ThemeUpdated(theme: dashatarTheme));
           },
@@ -94,10 +109,12 @@ class PuzzleView extends StatelessWidget {
                 ),
               ),
               BlocProvider(
-                create: (context) => PuzzleBloc(4)
+                //ToDo 2022-01-22_Jason_拼圖大小
+
+                create: (context) => PuzzleBloc(7)
                   ..add(
                     PuzzleInitialized(
-                      shufflePuzzle: shufflePuzzle,
+                      shufflePuzzle: isShuffle,
                     ),
                   ),
               ),
@@ -120,12 +137,16 @@ class _Puzzle extends StatelessWidget {
     final theme = context.select((ThemeBloc bloc) => bloc.state.theme);
     final state = context.select((PuzzleBloc bloc) => bloc.state);
 
+    //2022-01-28_Jason
+    var isAccess = theme is SimpleTheme;
+    isAccess = isAccess || (theme is SpringTheme);
+
     return LayoutBuilder(
       builder: (context, constraints) {
         return Stack(
           children: [
-            if (theme is SimpleTheme)
-              theme.layoutDelegate.backgroundBuilder(state),
+            //2022-01-28_Jason
+            if (isAccess) theme.layoutDelegate.backgroundBuilder(state),
             SingleChildScrollView(
               child: ConstrainedBox(
                 constraints: BoxConstraints(
@@ -139,8 +160,10 @@ class _Puzzle extends StatelessWidget {
                 ),
               ),
             ),
-            if (theme is! SimpleTheme)
-              theme.layoutDelegate.backgroundBuilder(state),
+
+            //2022-01-28_Jason
+            // if (theme is! SimpleTheme)
+            //   theme.layoutDelegate.backgroundBuilder(state),
           ],
         );
       },
@@ -342,7 +365,7 @@ class PuzzleMenu extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         ...List.generate(
-          themes.length,
+          1, //themes.length,
           (index) => PuzzleMenuItem(
             theme: themes[index],
             themeIndex: index,
@@ -391,85 +414,100 @@ class PuzzleMenuItem extends StatelessWidget {
     final currentTheme = context.select((ThemeBloc bloc) => bloc.state.theme);
     final isCurrentTheme = theme == currentTheme;
 
-    return ResponsiveLayoutBuilder(
-      small: (_, child) => Column(
-        children: [
-          Container(
-            width: 100,
-            height: 40,
-            decoration: isCurrentTheme
-                ? BoxDecoration(
-                    border: Border(
-                      bottom: BorderSide(
-                        width: 2,
-                        color: currentTheme.menuUnderlineColor,
-                      ),
-                    ),
-                  )
-                : null,
-            child: child,
-          ),
-        ],
-      ),
-      medium: (_, child) => child!,
-      large: (_, child) => child!,
-      child: (currentSize) {
-        final leftPadding =
-            themeIndex > 0 && currentSize != ResponsiveLayoutSize.small
-                ? 40.0
-                : 0.0;
+    //https://stackoverflow.com/questions/59976971/how-to-get-responsive-flutter-layouts
+    final screenWidth = MediaQuery.of(context).size.width;
 
-        return Padding(
-          padding: EdgeInsets.only(left: leftPadding),
-          child: Tooltip(
-            message:
-                theme != currentTheme ? context.l10n.puzzleChangeTooltip : '',
-            child: TextButton(
-              style: TextButton.styleFrom(
-                padding: EdgeInsets.zero,
-              ).copyWith(
-                overlayColor: MaterialStateProperty.all(Colors.transparent),
-              ),
-              onPressed: () {
-                // Ignore if this theme is already selected.
-                if (theme == currentTheme) {
-                  return;
-                }
+    //2022-01-28_Jason
+    var isShuffle = theme is SimpleTheme;
+    isShuffle = isShuffle || (theme is SpringTheme);
 
-                // Update the currently selected theme.
-                context
-                    .read<ThemeBloc>()
-                    .add(ThemeChanged(themeIndex: themeIndex));
+    return Container();
 
-                // Reset the timer of the currently running puzzle.
-                context.read<TimerBloc>().add(const TimerReset());
 
-                // Stop the Dashatar countdown if it has been started.
-                context.read<DashatarPuzzleBloc>().add(
-                      const DashatarCountdownStopped(),
-                    );
 
-                // Initialize the puzzle board for the newly selected theme.
-                context.read<PuzzleBloc>().add(
-                      PuzzleInitialized(
-                        shufflePuzzle: theme is SimpleTheme,
-                      ),
-                    );
-              },
-              child: AnimatedDefaultTextStyle(
-                duration: PuzzleThemeAnimationDuration.textStyle,
-                style: PuzzleTextStyle.headline5.copyWith(
-                  color: isCurrentTheme
-                      ? currentTheme.menuActiveColor
-                      : currentTheme.menuInactiveColor,
-                ),
-                child: Text(theme.name),
-              ),
-            ),
-          ),
-        );
-      },
-    );
+    //   ResponsiveLayoutBuilder(
+    //   small: (_, child) => Column(
+    //     children: [
+    //       Container(
+    //         width: screenWidth * 0.8,
+    //         height: 40,
+    //         decoration: isCurrentTheme
+    //             ? BoxDecoration(
+    //                 border: Border(
+    //                   bottom: BorderSide(
+    //                     width: 2,
+    //                     color: currentTheme.menuUnderlineColor,
+    //                   ),
+    //                 ),
+    //               )
+    //             : null,
+    //         child: child,
+    //       ),
+    //     ],
+    //   ),
+    //   medium: (_, child) => child!,
+    //   large: (_, child) => child!,
+    //   child: (currentSize) {
+    //     final leftPadding =
+    //         themeIndex > 0 && currentSize != ResponsiveLayoutSize.small
+    //             ? 40.0
+    //             : 0.0;
+    //
+    //     return Padding(
+    //       padding: EdgeInsets.only(left: leftPadding),
+    //       child: Tooltip(
+    //         message:
+    //             theme != currentTheme ? context.l10n.puzzleChangeTooltip : '',
+    //         child: TextButton(
+    //           style: TextButton.styleFrom(
+    //             padding: EdgeInsets.zero,
+    //           ).copyWith(
+    //             overlayColor: MaterialStateProperty.all(Colors.transparent),
+    //           ),
+    //           // onPressed: () {
+    //           //   // Ignore if this theme is already selected.
+    //           //   if (theme == currentTheme) {
+    //           //     return;
+    //           //   }
+    //           //
+    //           //   // Update the currently selected theme.
+    //           //   context
+    //           //       .read<ThemeBloc>()
+    //           //       .add(ThemeChanged(themeIndex: themeIndex));
+    //           //
+    //           //   // Reset the timer of the currently running puzzle.
+    //           //   context.read<TimerBloc>().add(const TimerReset());
+    //           //
+    //           //   // Stop the Dashatar countdown if it has been started.
+    //           //   context.read<DashatarPuzzleBloc>().add(
+    //           //         const DashatarCountdownStopped(),
+    //           //       );
+    //           //
+    //           //   // Initialize the puzzle board for the newly selected theme.
+    //           //   context.read<PuzzleBloc>().add(
+    //           //         PuzzleInitialized(
+    //           //           shufflePuzzle: isShuffle,
+    //           //         ),
+    //           //       );
+    //           // },
+    //           onPressed: () {},
+    //           child: AnimatedDefaultTextStyle(
+    //             duration: PuzzleThemeAnimationDuration.textStyle,
+    //             style: PuzzleTextStyle.headline5.copyWith(
+    //               color: isCurrentTheme
+    //                   ? currentTheme.menuActiveColor
+    //                   : currentTheme.menuInactiveColor,
+    //             ),
+    //             child: Text(
+    //               theme.name,
+    //               textAlign: TextAlign.center,
+    //             ),
+    //           ),
+    //         ),
+    //       ),
+    //     );
+    //   },
+    // );
   }
 }
 

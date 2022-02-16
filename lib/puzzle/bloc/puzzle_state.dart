@@ -71,4 +71,7 @@ class PuzzleState extends Equatable {
         numberOfMoves,
         lastTappedTile,
       ];
+
+  //DateTime selectedDate;
+
 }

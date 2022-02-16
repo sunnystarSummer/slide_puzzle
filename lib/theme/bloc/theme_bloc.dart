@@ -2,6 +2,9 @@
 
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
+import 'package:intl/intl.dart';
+import 'package:very_good_slide_puzzle/festival/festival_month.dart';
+import 'package:very_good_slide_puzzle/festival/season_theme.dart';
 import 'package:very_good_slide_puzzle/simple/simple.dart';
 import 'package:very_good_slide_puzzle/theme/theme.dart';
 
@@ -9,8 +12,9 @@ part 'theme_event.dart';
 part 'theme_state.dart';
 
 class ThemeBloc extends Bloc<ThemeEvent, ThemeState> {
-  ThemeBloc({required List<PuzzleTheme> initialThemes})
-      : super(ThemeState(themes: initialThemes)) {
+  ThemeBloc({required List<PuzzleTheme> initialThemes,
+    required PuzzleTheme initialTheme,})
+      : super(ThemeState(themes: initialThemes, theme: initialTheme)) {
     on<ThemeChanged>(_onThemeChanged);
     on<ThemeUpdated>(_onThemeUpdated);
   }

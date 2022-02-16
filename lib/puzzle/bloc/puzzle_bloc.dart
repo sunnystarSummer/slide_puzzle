@@ -4,9 +4,12 @@ import 'dart:math';
 
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
+import 'package:flutter/foundation.dart';
+import 'package:intl/intl.dart';
 import 'package:very_good_slide_puzzle/models/models.dart';
 
 part 'puzzle_event.dart';
+
 part 'puzzle_state.dart';
 
 class PuzzleBloc extends Bloc<PuzzleEvent, PuzzleState> {
@@ -14,11 +17,14 @@ class PuzzleBloc extends Bloc<PuzzleEvent, PuzzleState> {
     on<PuzzleInitialized>(_onPuzzleInitialized);
     on<TileTapped>(_onTileTapped);
     on<PuzzleReset>(_onPuzzleReset);
+    on<PuzzleAnswer>(_onPuzzleAnswer);
   }
 
   final int _size;
 
   final Random? random;
+
+  late String answerDate = '';
 
   void _onPuzzleInitialized(
     PuzzleInitialized event,
@@ -74,7 +80,29 @@ class PuzzleBloc extends Bloc<PuzzleEvent, PuzzleState> {
   }
 
   void _onPuzzleReset(PuzzleReset event, Emitter<PuzzleState> emit) {
-    final puzzle = _generatePuzzle(_size);
+    answerDate = event.dateTime;
+
+    final puzzle = _generatePuzzle(
+      _size,
+      shuffle: true,
+    );
+    emit(
+      PuzzleState(
+        puzzle: puzzle.sort(),
+        numberOfCorrectTiles: puzzle.getNumberOfCorrectTiles(),
+      ),
+    );
+  }
+
+  void _onPuzzleAnswer(PuzzleAnswer event, Emitter<PuzzleState> emit) {
+    if (answerDate.isEmpty) {
+      final dateTimeNow = DateTime.now();
+      answerDate = DateFormat('yyyy/MM/dd').format(dateTimeNow);
+    }
+
+    final puzzle = _generatePuzzle(
+      _size,
+    );
     emit(
       PuzzleState(
         puzzle: puzzle.sort(),
@@ -84,10 +112,12 @@ class PuzzleBloc extends Bloc<PuzzleEvent, PuzzleState> {
   }
 
   /// Build a randomized, solvable puzzle of the given size.
-  Puzzle _generatePuzzle(int size, {bool shuffle = true}) {
+  Puzzle _generatePuzzle(int size, {bool shuffle = false}) {
     final correctPositions = <Position>[];
     final currentPositions = <Position>[];
     final whitespacePosition = Position(x: size, y: size);
+
+    final puzzlePositions = <Position>[];
 
     // Create all possible board positions.
     for (var y = 1; y <= size; y++) {

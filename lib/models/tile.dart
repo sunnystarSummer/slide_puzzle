@@ -1,5 +1,6 @@
 import 'package:equatable/equatable.dart';
 import 'package:very_good_slide_puzzle/models/models.dart';
+import 'package:very_good_slide_puzzle/typography/font_weights.dart';
 
 /// {@template tile}
 /// Model for a puzzle tile.

@@ -28,5 +28,14 @@ class TileTapped extends PuzzleEvent {
 }
 
 class PuzzleReset extends PuzzleEvent {
-  const PuzzleReset();
+  const PuzzleReset({required this.dateTime});
+
+  final String dateTime;
+
+  @override
+  List<Object> get props =>[dateTime];
+}
+
+class PuzzleAnswer extends PuzzleEvent {
+  const PuzzleAnswer();
 }

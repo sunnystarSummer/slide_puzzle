@@ -32,6 +32,41 @@ abstract class PuzzleColors {
   /// Primary 0
   static const Color primary0 = Color(0xFFFFFFFF);
 
+  /// White Primary 1
+  static const Color primaryWhite1 = Color(0xFF1E1E1E);
+
+  /// White Primary 2
+  static const Color primaryWhite2 = Color(0xFF2B2B2B);
+
+  /// White Primary 3
+  static const Color primaryWhite3 = Color(0xFF383838);
+
+  /// White Primary 4
+  static const Color primaryWhite4 = Color(0xFF535353);
+
+  /// White Primary 5
+  static const Color primaryWhite5 = Color(0xFF686868);
+
+  /// White Primary 6
+  static const Color primaryWhite6 = Color(0xFF7D7D7D);
+
+  /// White Primary 7
+  static const Color primaryWhite7 = Color(0xFFB9B9B9);
+
+  /// White Primary 8
+  static const Color primaryWhite8 = Color(0xFFEAEAEA);
+
+  /// White Primary 9
+  static const Color primaryWhite9 = Color(0xFFF8F8F8);
+
+  /// White Primary 0
+  static const Color primaryWhite0 = Color(0xFFFFFFFF);
+
+
+
+
+
+
   /// Black
   static const Color black = Color(0xFF000000);
 

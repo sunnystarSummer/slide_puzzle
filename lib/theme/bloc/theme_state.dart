@@ -5,7 +5,9 @@ part of 'theme_bloc.dart';
 class ThemeState extends Equatable {
   const ThemeState({
     required this.themes,
-    this.theme = const SimpleTheme(),
+    required this.theme,
+    //2022-02-06_Jason
+    //this.theme = const SeasonTheme02(),
   });
 
   /// The list of all available themes.
@@ -26,4 +28,11 @@ class ThemeState extends Equatable {
       theme: theme ?? this.theme,
     );
   }
+
+
+  // SimpleTheme initialTheme(){
+  //   final festival = Festival(selectedDate: DateTime.now());
+  //   final festivalMonth = festival.festivalMonth();
+  //   return festivalMonth.theme;
+  // }
 }

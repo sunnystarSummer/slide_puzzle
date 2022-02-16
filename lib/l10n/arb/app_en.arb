@@ -8,7 +8,7 @@
     "@puzzleRestartTooltip": {
         "description": "Shown as a tooltip for the puzzle restart button"
     },
-    "puzzleChallengeTitle": "Puzzle Challenge",
+    "puzzleChallengeTitle": "Puzzle 2022",
     "@puzzleChallengeTitle": {
         "description": "Shown as the title of the puzzle"
     },
@@ -23,6 +23,10 @@
     "puzzleShuffle": "Shuffle",
     "@puzzleShuffle": {
         "description": "Shown on the button that shuffle the puzzle"
+    },
+    "puzzleAnswer": "Answer",
+    "@puzzleAnswer": {
+        "description": "Shown on the button that answer the puzzle"
     },
     "puzzleCompleted": "Well done. Congrats!",
     "@puzzleCompleted": {
@@ -139,5 +143,192 @@
     "dashatarSuccessShareText": "Just solved the #FlutterPuzzleHack! Check it out ↓",
     "@dashatarSuccessShareText": {
         "description": "The text to share for this Flutter Puzzle challenge, shown in the Dashatar success state"
-    }
+    },
+
+    "january01": "Spring Festival",
+    "january01_Content": "",
+
+    "january28": "Spring Festival",
+    "january28_Content": "",
+
+
+    "february01": "Spring Festival",
+    "february01_Content": "Chinese New Year is one of the most important holidays in China, and has strongly influenced Chinese New Year celebrations such as the Losar of Tibet, and of China's neighbours, including the Korean New Year (Korean: 설날, seollal), and the Tết of Vietnam.",
+
+    "february02": "World Wetlands Day",
+    "february02_Content": "World Wetlands Day is an environmentally related celebration which dates back to the year of 1971 when several environmentalists gathered to reaffirm the protection and love for wetlands, which are the small environments of plant life and organisms found within water bodies that bring about ecological health in abundance to not only water bodies but environments as a whole.",
+
+
+    "february14": "Valentine's Day",
+    "february14_Content": "Valentine's Day, also called Saint Valentine's Day or the Feast of Saint Valentine, is celebrated annually on February 14. It originated as a Christian feast day honoring one or two early Christian martyrs named Saint Valentine and, through later folk traditions, has become a significant cultural, religious, and commercial celebration of romance and love in many regions of the world.",
+
+    "february21": "International Mother Language Day",
+    "february21_Content": "International Mother Language Day is a worldwide annual observance held on 21 February to promote awareness of linguistic and cultural diversity and to promote multilingualism. First announced by UNESCO on 17 November 1999, it was formally recognized by the United Nations General Assembly with the adoption of UN resolution 56/262 in 2002.",
+
+    "february27": "International Polar Bear Day",
+    "february27_Content": "International Polar Bear Day is an annual event celebrated every February 27, to coincide with the time period when polar bear moms and cubs are sleeping in their dens, and to raise awareness about the conservation status of the polar bear.",
+
+
+    "march03": "World Wildlife Day",
+    "march03_Content": "On 20 December 2013, at its 68th session, the United Nations General Assembly (UNGA), in its resolution UN 68/205, decided to proclaim 3 March, the international day of the adoption of the Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES) on the planet raise awareness and benefits fauna and flora in 1973, as World Wildlife Day. The commemoration was proposed by Thailand to celebrate and raise awareness of the world's wild fauna and flora.",
+
+    "march15": "World Consumer Rights Day",
+    "march15_Content": "World Consumer Rights Day is an annual occasion for celebration and solidarity within the international consumer movement. Participants observe the day by promoting the basic rights of all consumers, demanding that those rights are respected and protected, and protesting about the market abuses and social injustices which undermine them.",
+
+    "march21": "International Day of Forests",
+    "march21_Content": "The International Day of Forests was established on the 21st day of March, by resolution of the United Nations General Assembly on November 28, 2012. Each year, various events celebrate and raise awareness of the importance of all types of forests, and trees outside forests, for the benefit of current and future generations.",
+
+    "march22": "World Water Day",
+    "march22_Content": "World Water Day is an annual United Nations (UN) observance day held on 22 March that highlights the importance of fresh water. The day is used to advocate for the sustainable management of freshwater resources. The theme of each day focuses on topics relevant to clean water, sanitation and hygiene (WASH), which is in line with the targets of Sustainable Development Goal 6.",
+
+    "march23": "World Meteorological Day",
+    "march23_Content": "World Meteorological Day was established in 1961 to commemorate the World Meteorological Organization creation on 23 March 1950. This organization announces a slogan for World Meteorology Day every year, and this day is celebrated in all member countries.",
+
+    "april02":"Pillow Fight Day",
+    "april02_Content": "The largest pillow fight flash mob was the Worldwide Pillow Fight Day (or International Pillow Fight Day) that took place on March 22, 2008. Over 25 cities around the globe participated in the first \"international flash mob\", which was the world's largest flash mob to date.",
+
+    "april07":"World Health Day",
+    "april07_Content": "World Health Day is a global health awareness day celebrated every year on 7 April, under the sponsorship of the World Health Organization (WHO), as well as other related organizations.",
+
+    "april11":"National Pet Day",
+    "april11_Content": "National Pet Day on April 11th dedicates the day to those pets who may not always get the companionship and attention pets deserve. While loving our pets is something we do every day, the observance encourages helping out orphaned pet companions. It will improve their health and enhance their opportunities for adoption.",
+
+    "april22":"Earth Day",
+    "april22_Content": "Earth Day is an annual event on April 22 to demonstrate support for environmental protection. First held on April 22, 1970, it now includes a wide range of events coordinated globally by EarthDay.org (formerly Earth Day Network) including 1 billion people in more than 193 countries.",
+
+    "april23":"World Book Day",
+    "april23_Content": "World Book Day, also known as World Book and Copyright Day or International Day of the Book, is an annual event organized by the United Nations Educational, Scientific and Cultural Organization (UNESCO) to promote reading, publishing, and copyright. The first World Book Day was celebrated on 23 April in 1995, and continues to be recognized on that day. A related event in the United Kingdom and Ireland is observed in March.",
+
+    "april29":"International Dance Day",
+    "april29_Content": "International Dance Day is a global celebration of dance, created by the Dance Committee of the International Theatre Institute (ITI), the main partner for the performing arts of UNESCO. The event takes place every year on 29 April, which is the anniversary of the birth of Jean-Georges Noverre (1727–1810), the creator of modern ballet. The day strives to encourage participation and education in dance through events and festivals held on the date all over the world.",
+
+
+    "may03":"World Press Freedom Day",
+    "may03_Content": "The United Nations General Assembly declared May 3 to be World Press Freedom Day or just World Press Day, observed to raise awareness of the importance of freedom of the press and remind governments of their duty to respect and uphold the right to freedom of expression enshrined under Article 19 of the 1948 Universal Declaration of Human Rights and marking the anniversary of the Windhoek Declaration, a statement of free press principles put together by African newspaper journalists in Windhoek in 1991.",
+
+    "may05":"Children's Day",
+    "may05_Content": "Children's Day (こどもの日, Kodomo no Hi) is a Japanese national holiday which takes place annually on May 5 and is the final celebration in Golden Week. It is a day set aside to respect children's personalities and to celebrate their happiness. It was designated a national holiday by the Japanese government in 1948, but has been a day of celebration in Japan since ancient times.",
+
+    "may12":"International Nurses Day",
+    "may12_Content": "International Nurses Day (IND) is an international day observed around the world on 12 May (the anniversary of Florence Nightingale's birth) of each year, to mark the contributions that nurses make to society.",
+
+    "may31":"World No Tobacco Day",
+    "may31_Content": "World No Tobacco Day (WNTD) is observed around the world every year on 31 May. This yearly celebration informs the public on the dangers of using tobacco, the business practices of tobacco companies, what the World Health Organization (WHO) is doing to fight against the use of tobacco, and what people around the world can do to claim their right to health and healthy living and to protect future generations.",
+
+    "june01":"International Children's Day",
+    "june01_Content": "Children's Day is a commemorative date celebrated annually in honor of children, whose date of observance varies by country. In 1925, International Children's Day was first proclaimed in Geneva during the World Conference on Child Welfare. Since 1950, it is celebrated on June 1 in most Communist and post-Communist countries.",
+
+    "june05":"World Environment Day",
+    "june05_Content": "World Environment Day (WED) is celebrated annually on 5 June and is the United Nations' principal vehicle for encouraging awareness and action for the protection of the environment. First held in 1974, it has been a platform for raising awareness on environmental issue such as marine pollution, human overpopulation, global warming, sustainable consumption and wildlife crime. World Environment Day is a global platform for public outreach, with participation from over 143 countries annually.",
+
+    "june08":"World Oceans Day",
+    "june08_Content": "World Ocean Day is an international day that takes place annually on 8 June. The concept was originally proposed in 1992 by Canada's International Centre for Ocean Development (ICOD) and the Ocean Institute of Canada (OIC) at the Earth Summit – UN Conference on Environment and Development (UNCED) in Rio de Janeiro, Brazil.",
+
+    "june14":"World Blood Donor Day",
+    "june14_Content": "World Blood Donor Day (WBDD) is held on June 14 each year. The event was organised for the first time in 2005, by a joint initiative of the World Health Organization, the International Federation of Red Cross and Red Crescent Societies to raise awareness of the need for safe blood and blood products, and to thank blood donors for their voluntary, life-saving gifts of blood. World Blood Donor Day is one of 11 official global public health campaigns marked by the World Health Organization (WHO), along with World Health Day, World Chagas Disease Day, World Tuberculosis Day, World Immunization Week, World Patient Safety Day, World Malaria Day, World No Tobacco Day, World Hepatitis Day, World Antimicrobial Awareness Week and World AIDS Day.",
+
+    "july02":"World UFO Day",
+    "july02_Content": "“I want to believe.” These are the words of notorious X-Files hero Fox Mulder, who convinced an entire generation that the truth is out there – we just have to find it. But on July 2, it won’t only be sci-fi enthusiasts trying out their ET sleuthing skills, as everyone on planet earth will have to opportunity to celebrate World UFO Day.",
+
+    "july03":"National Compliment Your Mirror Day",
+    "july03_Content": "National Compliment Your Mirror Day is on July 3. We live in an image-driven world. Sometimes this can cause us to not notice and compliment a very important person in our lives, ourselves! This day motivates us to look in the mirror and recognize all those things that make us exceptional, inside and out.",
+
+    "july06":"International Kissing Day",
+    "july06_Content": "No matter which type of kiss you prefer, International Kissing Day on July 6 is the perfect time of year to celebrate this simple but powerful gesture. From French kissing and a formal kiss on the cheek, to a kiss hello and a kiss goodbye — kissing is an age-old practice with significance that extends far beyond just romance.",
+
+    "july18":"National Sour Candy Day",
+    "july18_Content": "It’s National Sour Candy Day this July 18, and our taste buds are already tingling in anticipation! Move over, sweet candy, and let the sour take over in honor of this day. These fun, zesty bite-sized candies come in all shapes, sizes, and flavors, and we can’t wait to taste them all! From chewy twists and ropes to small hard candies, each one delivers on its promise to create a walloping big punch of sourness inside our mouths.",
+
+    "july20":"National Moon Day",
+    "july20_Content": "When Neil Armstrong stepped down onto the moon’s cratered surface with the words, “That’s one small step for man, one giant leap for mankind, ” every nation on earth seemed to breathe a collective sigh of relief.  National Moon Day celebrates not only the historic lunar landing on  July 20, 1969, but the day also reminds us of the uphill slog to get the space program literally off the ground.",
+
+    "july21":"National Junk Food Day",
+    "july21_Content": "Have you ever wished for a day where you can eat absolutely anything you want? Well that day is today. National Junk Food Day is celebrated every year on July 21. Dedicated to the foods we like to snack on, this isn’t your average cheat day.",
+
+    "august03":"National Watermelon Day",
+    "august03_Content": "Did you know that watermelon is 92% water? No wonder it’s so refreshing! People have been digging into this tasty, juicy fruit for millennia and it all started in Ancient Egypt. It’s said that watermelon cultivation began in the Nile Valley as early as the second millennium B.C. Watermelon seeds were even found in King Tut’s tomb! On August 3, we celebrate this ancient berry in a feast of juicy deliciousness—otherwise known as National Watermelon Day.",
+
+    "august06":"National Root Beer Float Day",
+    "august06_Content": "Diet? Not on August 6. It’s National Root Beer Float Day, after all — a time to enjoy one of the best beverage/dessert combos on the planet. On that day, some even compete for root beer float greatness. ",
+
+    "august08":"International Cat Day",
+    "august08_Content": "August 8 is International Cat Day — a day to celebrate one of man’s most common and ancient pets. They have even been worshiped as gods (we see you, Egypt.) Well, it is not surprising, Cats are one of the coolest beings on the planet: they are independent, inquisitive, adventurous, have an amazing physiognomy, and the power to heal by themselves — at least most of the time.",
+
+    "august13":"International Lefthanders Day",
+    "august13_Content": "Wonder what it’s like to see the world from a “left-handed” point of view? On International Lefthanders Day, August 13, you get to explore that world for a day. Did you know Presidents Ronald Reagan, Bill Clinton and Barack Obama were all left-handed?  Rock out with Paul McCartney or Jimi Hendrix, the world’s greatest left-handed guitarist.  (Stevie Ray Vaughan, born right-handed, learned to play a left-handed guitar like his hero, Hendrix). There’s also Oprah Winfrey,  Julia Roberts and Lady Gaga, left-handers all.  In baseball, there were the legendary “southpaws,  Babe Ruth and Sandy Koufax.",
+
+    "august17":"National Black Cat Appreciation Day",
+    "august17_Content": "On National Black Cat Appreciation Day, August 17, black cats could use a good spin doctor. They’re so sleek and seductive with their all-knowing yellow and green eyes, but black cats seldom get positive press even though they’re just as adorable as other cats. Let’s look at facts about this national day that honors our beautiful, sleek cats, and the reason why it was created in the first place.",
+
+    "august26":"International Dog Day",
+    "august26_Content": "National Dog Day 2021 is on August 26 and we are getting ready to celebrate all our furry friends in the best ways possible! Can you believe that our furry friends have been with us for at least 14,000 years? Thank goodness for that because what would we do without man’s best friend? It is time to pull out all the cake and pictures of your pup and share your love for them with the world!",
+
+    "september05":"National Cheese Pizza Day",
+    "september05_Content":"Hold the toppings, please! National Cheese Pizza Day is celebrated annually on September 5, and it’s time for you to celebrate in cheese-pizza style. We all love the classics, like pepperoni, pizza with pineapple, barbecued chicken pizza, or juicy meat lovers. But nothing surpasses the basics of holding a gently folded, single slice of melty deliciousness — the cheese pizza.",
+
+    "september10":"Harvest Moon Festival",
+    "september10_Content":"It’s time to feast and then feast some more on South Korea’s Harvest Moon Festival, also known as Chuseok or Hangawi, which is celebrated on the 15th of the eighth lunar month — this year on September 10. One of the most important festivals of the year in South Korea, celebrations for Chuseok include spending time with family while eating Korean delicacies. If you’re thinking the celebrations for Chuseok sound similar to Thanksgiving celebrations, it’s because this festival is actually Korean Thanksgiving!",
+
+    "september16":"Harvest Moon Festival",
+    "september16_Content":"It’s not just a side dish anymore.  On National Guacamole Day every September 16, we elevate this tasty green blend into the spotlight.  Guacamole (or “guac”) is made of avocados, which are well-known for the health benefits related to their high vitamin content and lots of cholestoral-lowering healthy fats.  Originally native to Mexico and Central America, avocados  grow on trees.  In fact, avocados are technically considered a fruit!",
+
+    "september21":"International Day of Peace",
+    "september21_Content":"The International Day of Peace (or World Peace Day) celebrated annually on September 21 is devoted to strengthening the ideals of peace, both within and among all nations and peoples. At a time when war and violence often monopolize our news cycles, the International Day of Peace is an inspiring reminder of what we can create together. Peace. Let’s give it a chance!",
+
+    "september23":"International Day of Sign Languages",
+    "september23_Content":"The International Day of Sign Languages is celebrated on September 23 by the United Nations. The International Day of Sign Languages is commemorated on this day since the World Federation of the Deaf (WFD) was founded on this day in 1951, as a result of efforts by the WFD in 2017.",
+
+    "september27":"World Tourism Day",
+    "september27_Content":"World Tourism Day is the result of the work done by the UN’s specialized agency — the World Tourism Organization (WTO). If you’ve ever strolled through a charming, perfectly-preserved European village or town, you’ve probably seen the WTO at work. Boosting local economies and ensuring sustainable tourism are but a few of the benefits of the WTO.",
+
+    "october01":"International Coffee Day",
+    "october01_Content":"International Coffee Day takes place on October 1 every year. Making the daily journey from tropical Africa to the breakfast mugs of households all over the world, coffee beans have been scattered all over the world for more than 600 years, and their preparation for consuming is a great example of metamorphosis. Humanity has been preparing coffee for many presentations: drinks, candies, medicine, and some ancient civilizations even used it as currency! No matter how you take it, coffee can energize you, warm you up, refresh you, keep you awake, and even catch you up with your loved ones.",
+
+
+    "october09":"World Post Day",
+    "october09_Content":"World Post Day is October 9 and we’re pumped for a throw back to communication methods of the past with some good old-fashioned letters. Mail carrier services have been in existence since ancient times, and even though we can communicate almost anything (literally) at the touch of a button, there’s no denying the importance of our local postal services…or the excitement of receiving a package in the mail! World Post Day marks the anniversary of the establishment of the Universal Postal Union, and it’s from this humble wellspring that the global communications revolution started and continues to this day.",
+
+    "october10":"National Cake Decorating Day",
+    "october10_Content":"With holiday dessert buffets coming up soon, National Cake Decorating Day is the perfect time to practice your technique! Halloween’s just a few short weeks away! Learning to create spooky ghosts, spiderwebs, pumpkins, and broomsticks from icing and fondant could be the perfect warm-up for embellishing cakes, cupcakes, and cookies with intricate snowy Christmas scenes a little later on. And think of all the fun you can have mixing frosting colors — like dyeing Easter eggs, but with lickable spoons.",
+
+
+    "october15":"National Pregnancy and Infant Loss Remembrance Day",
+    "october15_Content":"The loss of an infant is devastating. National Pregnancy and Infant Loss Remembrance Day honors those lives lost to miscarriage, Sudden Infant Death Syndrome, stillbirth, the death of a newborn, and more. National Pregnancy and Infant Loss Remembrance Day is a day to shatter the culture of silence surrounding infant and pregnancy loss. People defy the social and cultural taboos about speaking about the loss of their young ones by sharing their personal experiences and remembering their loss. This international day is observed particularly in the United States, Canada, and Australia. On October 15, take the opportunity to reflect, honor, and come together over pregnancy and infant loss. If you have a loved one who has experienced this loss, take the time to give them the love and support needed to process and recover.",
+
+
+    "october21":"National Apple Day",
+    "october21_Content":"National Apple Day falls on October 21 and is a day dedicated entirely to celebrating all things apple: apple pie, apple sauce, apple crisp… The list goes on and on. This holiday reminds us to appreciate the apple in its myriad forms. On October 21st, pick out your favorite variety and celebrate with apple lovers across the world.",
+
+    "october31":"Halloween",
+    "october31_Content":"Halloween on October 31 is undoubtedly the creepiest, most ghostly holiday of them all. Children dress up as Batman, the Joker, Wonder Woman, or some other favorite character; go to parties or walk their neighborhoods with jack o’ lanterns full of sweets as they go trick-or-treating. Spooky decorations fill windows and porches and screams can be heard in living rooms up and down the country as we collectively binge our favorite horror movies.",
+
+    "november02":"Day of the Dead",
+    "november02_Content":"Day of the Dead, or Día de los Muertos, is a traditional Mexican holiday celebrated November 2. On this day, it is believed that the souls of the dead return to visit their living family members. Many people celebrate this day by visiting the graves of deceased loved ones and setting up altars with their favorite foods, drink, and photos.",
+
+    "november03":"Japanese Culture Day",
+    "november03_Content":"Culture Day in Japan is celebrated every year on November 3. The constitution of Japan established this day as a national holiday. This day is also known as ‘Bunka no Hi’ and mostly celebrates the culture, academia, and arts of Japan. This national event is celebrated to pay respects to the traditional Japanese culture and to promote the notion of peace and freedom that is declared in the constitution of Japan. This public holiday was officially announced after the Second World War. In the first week of November, Education and Culture Week is observed. Events related to education and culture are held this week, which create a deep interest for people in Japanese culture.",
+
+    "november09":"National Fried Chicken Sandwich Day",
+    "november09_Content":"Is there anything better than biting into a fresh, fried chicken sandwich? Hearing the crunch and feeling the crisp texture of the fried batter over the juicy slice of chicken beneath it? The buttery, warm roll with mayo and crisp cold pickles. That experience merits a lot of respect, which is why we take National Chicken Sandwich Day seriously over here.",
+
+    "november14":"National Pickle Day",
+    "november14_Content":"National Pickle Day is on November 14th and it was created to celebrate the pickle as one of the worlds favorite fermented foods. Pickles prove to be preposterously popular with people across the country; the number of pickle-eaters is projected to proliferate to more than 250 million by 2023. That gives plenty of pretext to position November 14th as prime pickle time!",
+
+    "november24":"Thanksgiving",
+    "november24_Content":"America’s Thanksgiving holiday, born in the 1500s, mythologized in 1621, and observed even during the bleakest hours of the Civil War, now stands as one of the nation’s most anticipated and beloved days — celebrated each year on the fourth Thursday in November (November 24, 2022). Perhaps no other nonsectarian holiday has more tradition. Family, friends, food, and football have come to symbolize Thanksgiving — a rare celebratory holiday without an established gift-giving component. Instead, the day urges all of us to be grateful for things we do have.",
+
+    "december05":"International Ninja Day",
+    "december05_Content":"Back in 2003, Ninja Burger created International Ninja Day on December 5 as a way to celebrate the Ninja “speed” with which their burgers are delivered. Aside from that, ninjas are awesome. We all love them and secretly wish we were one. On this day, wear a ninja mask to work to plague your co-workers with ninja-ness and throwing stars! Got the day off? Dress like a ninja at the mall or run wild in the streets.",
+
+    "december06":"National Miners Day",
+    "december06_Content":"Despite federal efforts to ensure safe working conditions for miners, they have one of the most difficult and dangerous jobs you can imagine. To recognize their efforts, Congress has declared December 6 National Miners Day. Why? Our entire economy depends on them. On this holiday, we should all take a moment to think about the many ways that miners play a role in our daily lives. Mined materials contribute to things like roads, houses, cars and computers. We wouldn’t be able to get much done without their hard work.",
+
+    "december13":"National Horse Day",
+    "december13_Content":"National Horse Day is celebrated every December 13. It’s a day to remember the economic, historic, and cultural contributions that horses have made. Equine enthusiasts across the country will get together on December 13 to show their appreciation for these majestic creatures. Whether you’re a seasoned rider or have never been on a horse in your life, check out some ways you can recognize the day!",
+
+    "december22":"National Cookie Exchange Day",
+    "december22_Content":"December 22 is National Cookie Exchange Day and the glorious occasion when festively-decorated cookie tins and boxes appear at cookie exchange parties. It’s a classic celebration where the host throws a holiday party for family and friends, to which everyone brings delicious homemade cookies to share around. The toughest decision is which cookies to take. Wintertime classics like thumbprint jam cookies or gingerbread are always festive, but since this day celebrates all cookies, go ahead and add in some funfetti cookies or lemon squares!",
+
+    "december25":"Christmas",
+    "december25_Content":"Every year on December 25, we celebrate Christmas, a day for spending time with family, observing an important Christian holiday, partaking in lighthearted traditions, or just spreading some holiday cheer! Christmas has evolved over several millennia into a worldwide celebration that’s both religious and secular and chock full of fun-filled, family activities."
 }

@@ -13,7 +13,7 @@ class SimpleTheme extends PuzzleTheme {
   const SimpleTheme() : super();
 
   @override
-  String get name => 'Simple';
+  String get name => 'Simple Theme';
 
   @override
   bool get hasTimer => false;
@@ -27,6 +27,7 @@ class SimpleTheme extends PuzzleTheme {
   @override
   Color get backgroundColor => PuzzleColors.white;
 
+  //預設顯示
   @override
   Color get defaultColor => PuzzleColors.primary5;
 
@@ -43,13 +44,13 @@ class SimpleTheme extends PuzzleTheme {
   bool get isLogoColored => true;
 
   @override
-  Color get menuActiveColor => PuzzleColors.grey1;
+  Color get menuActiveColor => defaultColor;
 
   @override
-  Color get menuUnderlineColor => PuzzleColors.primary6;
+  Color get menuUnderlineColor => defaultColor;
 
   @override
-  Color get menuInactiveColor => PuzzleColors.grey2;
+  Color get menuInactiveColor => hoverColor;
 
   @override
   String get audioControlOnAsset => 'assets/images/audio_control/simple_on.png';
@@ -61,23 +62,6 @@ class SimpleTheme extends PuzzleTheme {
   @override
   PuzzleLayoutDelegate get layoutDelegate => const SimplePuzzleLayoutDelegate();
 
-  @override
-  List<Object?> get props => [
-        name,
-        audioControlOnAsset,
-        audioControlOffAsset,
-        hasTimer,
-        nameColor,
-        titleColor,
-        backgroundColor,
-        defaultColor,
-        buttonColor,
-        hoverColor,
-        pressedColor,
-        isLogoColored,
-        menuActiveColor,
-        menuUnderlineColor,
-        menuInactiveColor,
-        layoutDelegate,
-      ];
+
+//https://tw.piliapp.com/emoji/list/flags/
 }

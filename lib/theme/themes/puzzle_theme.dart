@@ -1,5 +1,6 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
+import 'package:very_good_slide_puzzle/colors/colors.dart';
 import 'package:very_good_slide_puzzle/layout/layout.dart';
 import 'package:very_good_slide_puzzle/theme/theme.dart';
 
@@ -82,4 +83,41 @@ abstract class PuzzleTheme extends Equatable {
   ///
   /// Used for building sections of the puzzle UI.
   PuzzleLayoutDelegate get layoutDelegate;
+
+  /// 數字圖騰顏色
+  Color get pixelPatternColor => PuzzleColors.grey1;
+
+  /// 一般日子標題背景顏色
+  Color get normalDayTitleColor => PuzzleColors.grey1;
+
+  /// 一般日子背景顏色
+  Color get normalDayColor => PuzzleColors.grey1;
+
+  /// 假日顏色
+  Color get holidayColor => PuzzleColors.grey1;
+
+  @override
+  List<Object?> get props => [
+    name,
+    audioControlOnAsset,
+    audioControlOffAsset,
+    hasTimer,
+    nameColor,
+    titleColor,
+    backgroundColor,
+    defaultColor,
+    buttonColor,
+    hoverColor,
+    pressedColor,
+    isLogoColored,
+    menuActiveColor,
+    menuUnderlineColor,
+    menuInactiveColor,
+    layoutDelegate,
+    //2022-01-28_Jason
+    pixelPatternColor,
+    normalDayTitleColor,
+    normalDayColor,
+    holidayColor,
+  ];
 }
