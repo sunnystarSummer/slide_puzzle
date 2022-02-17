@@ -145,11 +145,25 @@
         "description": "The text to share for this Flutter Puzzle challenge, shown in the Dashatar success state"
     },
 
-    "january01": "Spring Festival",
-    "january01_Content": "",
+    "january02": "National Science Fiction Day",
+    "january02_Content": "When it comes to fiction writing, the stories are only limited by one’s imagination. And no matter what type of fiction stories you like, chances are a few of them involve some sort of science fiction topics. If so, National Science Fiction Day on January 2 is the perfect day to celebrate this type of story.",
 
-    "january28": "Spring Festival",
-    "january28_Content": "",
+    "january03": "National Chocolate Covered Cherry Day",
+    "january03_Content":"National Chocolate Covered Cherry Day on January 3 is for celebrating that combo that just naturally seems to go together, cherries and chocolate. Just as the holiday festivities are behind us and a new year begins, we look forward to the luscious confection that puts a smile on everyone’s face and brightens our outlook for whatever waits for us in the new year ahead.",
+
+    "january04": "National Spaghetti Day",
+    "january04_Content":"Though the origins of spaghetti are disputed—whether it was Marco Polo bringing back culinary invention from the East, and Arab trade-route delicacy, or a home-grown Sicilian treat dating back to the 12th Century—we can all agree that a cold night with a big bowl of noodle-y, saucy goodness is balm for the soul. So join us on January 4th as we celebrate National Spaghetti Day with this amazing dish!",
+
+    "january11": "National Milk Day",
+    "january11_Content":"Not to be confused with World Milk Day on June 1, National Milk Day falls on January 11 to observe the very first time milk was delivered to homes inside sterilized glass bottles. It took until 1878 before anybody thought to fill bottles with milk and seal them with waxed paper. Before that, conditions for storing milk (let alone delivering it) were unsanitary at best and downright hazardous at worst. But now that we have the technology to pasteurize and deliver fresh milk to homes, stores, and processing facilities across the country, this most basic type of dairy is more accessible than ever before.",
+
+
+    "january15": "National Bagel Day",
+    "january15_Content":"National Bagel Day is January 15. Bagels have a history that is richer than your favorite cream cheese spread! These rounds of dough can be found just about anywhere: breakfast joints, coffee shops, supermarkets, or even your kitchen pantry. In fact, 2018 saw more than 354 million bagels sold.",
+
+    "january19": "National Popcorn Day",
+    "january19_Content":"Join us on January 19 as we celebrate National Popcorn Day! Buttered, salted, kettled, drizzled with caramel, popcorn is one of those snacks perfect anytime, anywhere. It’s great on the go, in the theater, or in your living room! Just be prepared to dig some of it out of your teeth.",
+
 
 
     "february01": "Spring Festival",

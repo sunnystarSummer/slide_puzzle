@@ -304,32 +304,76 @@ extension FestivalMonthExtension on FestivalMonth {
       case FestivalMonth.January:
         //
         return [
+          //National Science Fiction Day
+          //https://nationaltoday.com/national-science-fiction-day/
           FestivalDay.name(
-            1,
-            '🌅',
+            2,
+            '🤖',
             country: '🌏︎🌍️🌎️',
-            dayName: '',
-            content: '',
+            dayName: context?.l10n.january02,
+            content: context?.l10n.january02_Content,
           ),
-          //https://zh.wikipedia.org/wiki/%E5%9B%BD%E9%99%85%E6%95%B0%E6%8D%AE%E9%9A%90%E7%A7%81%E6%97%A5
+
+          //National Chocolate Covered Cherry Day
+          //https://nationaltoday.com/national-chocolate-covered-cherry-day/
+          // FestivalDay.name(
+          //   3,
+          //   '🍫',
+          //   country: '🌏︎🌍️🌎️',
+          //   dayName: context?.l10n.january03,
+          //   content: context?.l10n.january03_Content,
+          // ),
+
+          //National Spaghetti Day
+          //
           FestivalDay.name(
-            28,
-            '📊',
+            4,
+            '🍝',
             country: '🌏︎🌍️🌎️',
-            dayName: '',
-            content: '',
+            dayName: context?.l10n.january04,
+            content: context?.l10n.january04_Content,
           ),
+
+          //National Milk Day
+          //https://nationaltoday.com/national-milk-day/
+          FestivalDay.name(
+            11,
+            '🥛',
+            country: '🌏︎🌍️🌎️',
+            dayName: context?.l10n.january11,
+            content: context?.l10n.january11_Content,
+          ),
+
+          //National Bagel Day
+          FestivalDay.name(
+            15,
+            '🥯',
+            country: '🌏︎🌍️🌎️',
+            dayName: context?.l10n.january15,
+            content: context?.l10n.january15_Content,
+          ),
+
+          //National Popcorn Day
+          //https://nationaltoday.com/national-popcorn-day/
+          FestivalDay.name(
+            19,
+            '🍿',
+            country: '🌏︎🌍️🌎️',
+            dayName: context?.l10n.january15,
+            content: context?.l10n.january15_Content,
+          ),
+
         ];
       case FestivalMonth.February:
         return [
           //https://en.wikipedia.org/wiki/Chinese_New_Year
-          FestivalDay.name(
-            1,
-            '🧨',
-            country: '🇹🇼🇨🇳',
-            dayName: context?.l10n.february01,
-            content: context?.l10n.february01_Content,
-          ),
+          // FestivalDay.name(
+          //   1,
+          //   '🧨',
+          //   country: '🇹🇼🇨🇳',
+          //   dayName: context?.l10n.february01,
+          //   content: context?.l10n.february01_Content,
+          // ),
           //World Wetlands Day
           //https://en.wikipedia.org/wiki/World_Wetlands_Day
           FestivalDay.name(
@@ -515,8 +559,8 @@ extension FestivalMonthExtension on FestivalMonth {
             31,
             '🚭',
             country: '🌏︎🌍️🌎️',
-            dayName: context?.l10n.february01,
-            content: context?.l10n.february01_Content,
+            dayName: context?.l10n.may31,
+            content: context?.l10n.may31_Content,
           ),
         ];
       case FestivalMonth.June:
